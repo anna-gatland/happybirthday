@@ -1,0 +1,221 @@
+/* Write some CSS below */
+#background {
+	background-color: #000; 
+}
+
+body {
+	font-family:'Nanum Gothic Coding', monospace;
+	font-size: 18px; 
+	color: #2b580c; 
+}
+
+
+
+h1 {
+	font-family: 'Give You Glory', cursive;
+}
+
+a{
+	color: #d8ebb5;
+	font-weight: bold;
+	text-decoration: none; 
+	transition: .3s; 
+}
+
+a:hover {
+	color: #2b580c; 
+}
+
+/* customised CSS */
+
+.banner {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/trees.jpg);
+	background-repeat: cover; 
+	background-position: center; 
+	padding: 150px 0; 
+	text-align: center;  
+}
+
+.banner h1 {
+	color: white; 
+	font-size: 45px; 
+	margin: 0;
+}
+
+.heart {
+	background-color: white;
+	height: 30px; 
+	transform: rotate(-45deg);
+	width: 30px; 
+	margin: 2% 0 1% 49%; 
+}
+
+.heart:before,
+.heart:after {
+	content: "";
+	background-color: white; 
+	border-radius: 50%;
+	height: 30px; 
+	position: absolute;
+	width: 30px; 
+}
+
+.heart:before {
+	top: -15px; 
+	left: 0; 
+}
+
+.banner p {
+	color: white; 
+	font-size: 30px; 
+}
+
+.btn-green {
+	background-color: #639a67; 
+	color: #2b580c; 
+	padding: 26px 48px;
+	border-radius: 4px; 
+	display: inline-block;
+	text-decoration: none; 
+	transition: .3s
+}
+
+.btn-green:hover {
+	background-color: #2b580c; 
+	color: #d8ebb5;
+
+}
+
+
+ul {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 30% -0.5% 15% 0;
+	padding: 0; 
+	width: 600px; 
+	height: 150px; 
+}
+ul li {
+	list-style: none; 
+	position: absolute;
+	width: 200px; 
+	height: 200px; 
+	background: #000; 
+	margin: -100px; 
+	transform: rotate(45deg);
+	transition: .5s; 
+	overflow: hidden;
+	opacity: .5; 
+}
+
+ul li:hover {
+	opacity: 1; 
+}
+ul li.item1 {
+	top: 0; 
+	left: 0; 
+}
+
+ul li.item2 {
+	bottom: 0; 
+	left: 25%; 
+}
+
+ul li.item3 {
+	top: 0; 
+	left: 50%; 
+}
+
+ul li.item4 {
+	bottom: 0; 
+	left: 75%; 
+}
+ul li.item5 {
+	top: 0; 
+	left: 100%; 
+}
+
+ul li .bg {
+	width: 100%; 
+	height: 100%; 
+	transform: rotate(-45deg) scale(1.42); 
+}
+ul li.item1 .bg{
+	background: url(images/ben.jpg);
+	background-size: cover; 
+
+}
+
+ul li.item2 .bg{
+	background: url(images/joe8.jpg);
+	background-size: cover; 
+
+}
+ul li.item3 .bg{
+	background: url(images/joe2.jpg);
+	background-size: cover; 
+
+}
+
+ul li.item4 .bg{
+	background: url(images/joe5.jpg);
+	background-size: cover; 
+
+}
+ul li.item5 .bg{
+	background: url(images/joe6.jpg);
+	background-size: cover; 
+
+}
+
+.footer {
+	font-size: 28px; 
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  // CSS for this breakpoint
+}
+
+/Small devices (landscape phones, 576px and up)/
+@media (min-width: 576px) {
+   // CSS for this breakpoint
+}
+
+/Medium devices (tablets, 768px and up)/
+@media (min-width: 768px) {
+   // CSS for this breakpoint
+}
+
+/Large devices (desktops, 992px and up)/
+@media (min-width: 992px) {
+   // CSS for this breakpoint
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+   // CSS for this breakpoint
+}
